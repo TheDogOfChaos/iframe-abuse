@@ -1,0 +1,44 @@
+<DOCTYPE !HTML>
+<html>
+  <head>
+    <style>
+      body, html {
+        height: 100%;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 8px;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <iframe></iframe>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <iframe></iframe>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <iframe></iframe>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <iframe></iframe>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <iframe></iframe>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <iframe></iframe>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <iframe></iframe>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <iframe></iframe>
+    <img src="media/conditional_dnp_zackary911-4261588.gif"></img>
+    <script>
+      const iframeEl = document.querySelector('iframe');
+      const nextQueryValue = !location.search ? 1 :
+      Number(location.search.split("?").pop()) + 1;
+      iframeEl.src = `index.html?${nextQueryValue}`;
+    </script>
+  </body>
+</html>
